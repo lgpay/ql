@@ -2,7 +2,7 @@ const fs = require('fs');
 const notifyContent = '截至已满180天';
 
 function checkNotify() {
-  const lastNotifyTime = fs.existsSync('./180.txt')
+  const lastNotifyTime = fs.existsSync('./last180.txt')
     ? Number(fs.readFileSync('./last180.txt', 'utf8'))
     : null; // 从文件中读取上次通知的时间戳
 
