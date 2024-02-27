@@ -17,7 +17,5 @@ const remainingDays = 180 - days;
 // 如果距离第180天的天数小于等于3天，则发送通知
 if (remainingDays <= 3) {
   sendMessage.push(`还差${remainingDays}天到达第180天`);
+  notify.sendNotify("180天计时", sendMessage.join("\n"));
 }
-
-// 发送通知
-notify.sendNotify("180天计时", sendMessage.join("\n"));
