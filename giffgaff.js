@@ -1,5 +1,6 @@
 /*
-cron "30 8 * * *" giffgaff.js, tag=giffgaff保号提醒
+cron: 30 8 * * *
+const $ = new Env("giffgaff保号提醒");
 */
 
 const notify = require('./sendNotify');
@@ -15,7 +16,7 @@ const currentDate = moment().format('YYYY-MM-DD');
 const days = moment(currentDate).diff(moment(startDate), 'days');
 
 // 计算距离第180天还有几天
-const remainingDays = 60 - days;
+const remainingDays = 180 - days;
 
 // 如果距离第180天的天数小于等于3天，则发送通知
 if (remainingDays <= 3) {
