@@ -2,7 +2,7 @@
 cron "30 8 * * *" giffgaff.js, tag:giffgaff保号提醒
  */
 
-const $ = new Env("giffgaff保号提醒");
+const $ = new Env('giffgaff保号提醒');
 const notify = require('./sendNotify');
 const moment = require('moment');
 
