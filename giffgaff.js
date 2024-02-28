@@ -1,5 +1,5 @@
 /*
-cron "30 8 * * *" giffgaff.js, tag=giffgaff到期提醒
+cron "30 8 * * *" giffgaff.js, tag=giffgaff保号提醒
 */
 
 const notify = require('./sendNotify');
@@ -20,5 +20,5 @@ const remainingDays = 60 - days;
 // 如果距离第180天的天数小于等于3天，则发送通知
 if (remainingDays <= 3) {
   const sendMessage = `距离giffgaff到期还有${remainingDays}天，请尽快保号`;
-  notify.sendNotify(sendMessage);
+  notify.sendNotify('giffgaff保号提醒',sendMessage);
 }
