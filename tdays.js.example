@@ -16,5 +16,5 @@ if (remainingDays <= thresholdDays) {
   const sendMessage = `距离到期还有${remainingDays}天，请尽快处理`;
 
   // 发送通知
-  notify.sendNotify('消息标题', sendMessage);
+  notify.sendNotify('通知标题', sendMessage);
 }
