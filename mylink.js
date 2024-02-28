@@ -1,5 +1,5 @@
 /*
-cron "30 8 * * *" mylink.js, tag:MyLink保号提醒
+cron "30 9 * * *" mylink.js, tag:MyLink保号提醒
  */
 
 const $ = new Env('MyLink保号提醒');
