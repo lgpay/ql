@@ -20,5 +20,5 @@ if (remainingDays <= thresholdDays) {
   const sendMessage = `还差${remainingDays}天到达第${targetDays}天`;
 
   // 发送通知
-  notify.sendNotify(sendMessage);
+  notify.sendNotify('通知标题', sendMessage);
 }
