@@ -2,7 +2,6 @@
 cron "30 9 * * *" myais.js, tag:myAIS保号提醒
  */
 
-const $ = new Env('myAIS保号提醒');
 const notify = require('./sendNotify');
 const moment = require('moment');
 
