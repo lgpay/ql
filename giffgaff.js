@@ -1,5 +1,5 @@
 /*
-cron "30 8 * * *" giffgaff.js, tag:giffgaff保号提醒
+cron "30 9 * * *" giffgaff.js, tag:giffgaff保号提醒
  */
 
 const $ = new Env('giffgaff保号提醒');
