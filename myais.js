@@ -6,7 +6,7 @@ const notify = require('./sendNotify');
 const moment = require('moment');
 
 // 配置
-const expiryDate = '2024-06-27'; // 设定到期日期，格式：YYYY-MM-DD
+const expiryDate = '2024-09-25'; // 设定到期日期，格式：YYYY-MM-DD
 const thresholdDays = 3; // 设定小于等于的天数阈值
 
 // 获取当前日期
