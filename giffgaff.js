@@ -6,7 +6,7 @@ const notify = require('./sendNotify');
 const moment = require('moment');
 
 // 配置
-const startDate = '2024-01-01'; // 设定开始日期，格式：YYYY-MM-DD
+const startDate = '2024-06-27'; // 设定开始日期，格式：YYYY-MM-DD
 
 // 获取当前日期
 const currentDate = moment().format('YYYY-MM-DD');
