@@ -1,6 +1,7 @@
 /*
-cron "30 9 * * *" mylink.js, tag:MyLink保号提醒
- */
+const $ = new Env('MyLink保号提醒')
+cron "30 9 * * *" 
+*/
 
 const notify = require('./sendNotify');
 const moment = require('moment');
