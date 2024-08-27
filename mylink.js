@@ -1,6 +1,6 @@
 /*
 const $ = new Env('MyLink保号提醒')
-cron "30 9 * * *" 
+cron: 30 9 * * *
 */
 
 const notify = require('./sendNotify');
