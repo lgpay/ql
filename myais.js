@@ -16,6 +16,9 @@ const currentDate = moment().format('YYYY-MM-DD');
 // 计算距离到期的天数
 const remainingDays = moment(expiryDate).diff(moment(currentDate), 'days');
 
+// 输出剩余天数
+console.log(`距离myAIS到期还有${remainingDays}天`);
+
 // 如果距离到期的天数小于等于阈值，则发送通知
 if (remainingDays <= thresholdDays) {
   const sendMessage = `距离myAIS到期还有${remainingDays}天，请尽快充值`;
