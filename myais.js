@@ -7,6 +7,7 @@ const notify = require('./sendNotify');
 const moment = require('moment');
 
 // 配置
+const serviceName = 'myAIS'; // 设置服务名称变量
 const expiryDate = '2024-09-25'; // 设定到期日期，格式：YYYY-MM-DD
 const thresholdDays = 3; // 设定小于等于的天数阈值
 
@@ -17,12 +18,12 @@ const currentDate = moment().format('YYYY-MM-DD');
 const remainingDays = moment(expiryDate).diff(moment(currentDate), 'days');
 
 // 输出剩余天数
-console.log(`距离myAIS到期还有${remainingDays}天`);
+console.log(`距离${serviceName}到期还有${remainingDays}天`);
 
 // 如果距离到期的天数小于等于阈值，则发送通知
 if (remainingDays <= thresholdDays) {
-  const sendMessage = `距离myAIS到期还有${remainingDays}天，请尽快充值`;
+  const sendMessage = `距离${serviceName}到期还有${remainingDays}天，请尽快充值`;
 
   // 发送通知
-  notify.sendNotify('myAIS保号提醒', sendMessage);
+  notify.sendNotify(`${serviceName}保号提醒`, sendMessage);
 }
