@@ -8,7 +8,7 @@ const moment = require('moment');
 
 // 配置
 const serviceName = 'myAIS'; // 设置服务名称变量
-const expiryDate = '2024-11-24'; // 设定到期日期，格式：YYYY-MM-DD
+const expiryDate = '2025-03-13'; // 设定到期日期，格式：YYYY-MM-DD
 const thresholdDays = 3; // 设定小于等于的天数阈值
 
 // 获取当前日期
