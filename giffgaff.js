@@ -8,7 +8,7 @@ const moment = require('moment');
 
 // 配置
 const serviceName = 'giffgaff'; // 设置服务名称变量
-const startDate = '2024-06-27'; // 设定开始日期，格式：YYYY-MM-DD
+const startDate = '2025-01-11'; // 设定开始日期，格式：YYYY-MM-DD
 const expiryThresholdDays = 3; // 设定到期阈值天数
 
 // 获取当前日期
